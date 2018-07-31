@@ -940,12 +940,13 @@ int64 GetProofOfWorkReward(unsigned int nBits)
 	{
 		nMaxMintProofOfWork = MAX_MINT_PROOF_OF_WORK_2 * 2;  // 500,000 coins
 	}
-	
+
+/* logic fail	
 	else if (nBestHeight > 609500)
 	{
 		nMaxMintProofOfWork = MAX_MINT_PROOF_OF_WORK_2;  // 250,000 coins
 	}
-	
+*/	
     CBigNum bnSubsidyLimit = nMaxMintProofOfWork;
     CBigNum bnTarget;
     bnTarget.SetCompact(nBits);
@@ -987,12 +988,13 @@ int64 GetProofOfStakeReward(int64 nCoinAge)
 	{
 		nSubsidy = 500000 * COIN;  // 500,000 coins
 	}
-	
+
+/* logic fail
 	else if (nBestHeight  > 609500)
 	{
 		nSubsidy = 250000 * COIN;  // 500,000 coins
 	}    
-    
+*/    
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfStakeReward(): create=%s nCoinAge=%" PRI64d "\n", FormatMoney(nSubsidy).c_str(), nCoinAge);
     return nSubsidy;
