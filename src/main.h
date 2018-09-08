@@ -1,6 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2012 The Bitcoin developers
-// Copyright (c) 2011-2013 The StrongHands developers
+// Copyright (c) 2009-2012 The Bitcoin Developers
+// Copyright (c) 2011-2017 The Peercoin developers
+// Copyright (c) 2017-2018 The Stronghands developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef BITCOIN_MAIN_H
@@ -57,7 +58,7 @@ static const int fHaveUPnP = false;
 #endif
 
 static const uint256 hashGenesisBlockOfficial("0x00000b8ada156793cd495e09bff9c662226ed3ed3784635295c084f7242b46df");
-static const uint256 hashGenesisBlockTestNet("0x00000001f757bb737f6596503e17cd17b0658ce630cc727c0cca81aec47c9f06");
+static const uint256 hashGenesisBlockTestNet("0x000062f50373f81c0ef929844984812fd48221bf175f139c858492c1cb21bd2d");
 
 static const int64 nMaxClockDrift = 0.5 * 60 * 60;        // two hours
 

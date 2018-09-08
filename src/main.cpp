@@ -1,6 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2012 The Bitcoin developers
-// Copyright (c) 2011-2013 The StrongHands developers
+// Copyright (c) 2009-2012 The Bitcoin Developers
+// Copyright (c) 2011-2017 The Peercoin developers
+// Copyright (c) 2017-2018 The Stronghands developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -2359,10 +2360,10 @@ bool LoadBlockIndex(bool fAllowNew)
     if (fTestNet)
     {
         hashGenesisBlock = hashGenesisBlockTestNet;
-        bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
+        bnProofOfWorkLimit = CBigNum(~uint256(0) >> 16);
         nStakeMinAge = 60 * 60; // test net min age is 1 hour
         nCoinbaseMaturity = 6;
-        bnInitialHashTarget = CBigNum(~uint256(0) >> 20);
+        bnInitialHashTarget = CBigNum(~uint256(0) >> 16);
         nModifierInterval = 60 * 20; // test net modifier interval is 20 minutes
     }
 
@@ -2412,7 +2413,7 @@ bool LoadBlockIndex(bool fAllowNew)
         if (fTestNet)
         {
             block.nTime    = 1435547102;
-            block.nNonce   = 1560399;
+            block.nNonce   = 1664955;
         }
 
         //// debug print
