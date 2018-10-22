@@ -29,7 +29,7 @@ static const int PEERUNITY_VERSION =
 #define PPCOIN_VERSION_MAJOR       0
 #define PPCOIN_VERSION_MINOR       4
 #define PPCOIN_VERSION_REVISION    2
-#define PPCOIN_VERSION_BUILD       2
+#define PPCOIN_VERSION_BUILD       3
 
 static const int PPCOIN_VERSION =
                            1000000 * PPCOIN_VERSION_MAJOR
